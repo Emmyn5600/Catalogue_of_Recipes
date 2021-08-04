@@ -1,8 +1,8 @@
 import React from 'react';
 
 const Tutorial = () => (
-  <div className="home">
-    <h2>
+  <div className="tutorial-section">
+    <h2 className="tutorial-header">
       Welcome to our Tutorial Page
     </h2>
 

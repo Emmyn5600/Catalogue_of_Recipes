@@ -1,15 +1,16 @@
 import React from 'react';
+import { Link } from 'react-router-dom';
 
 const Navbar = () => (
   <nav className="d-flex d-flex flex-center mainNav">
     <div className="d-flex flex-center links-container">
-      <a href="#home" className="logo">CATALOGUE OF RECIPES</a>
+      <Link to="/" className="logo">CATALOGUE OF RECIPES</Link>
       <ul className="d-flex nav-links">
         <li>
-          <a href="#home">ORDER</a>
+          <Link to="/order">ORDERS</Link>
         </li>
         <li>
-          <a href="#home">TUTORIALS</a>
+          <Link to="/tutorial">TUTORIALS</Link>
         </li>
       </ul>
     </div>

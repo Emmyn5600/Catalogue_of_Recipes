@@ -143,3 +143,11 @@ code {
 .book-wrapper {
   padding-top: 3rem;
 }
+
+.tutorial-section {
+  padding: 250px;
+}
+
+.tutorial-header {
+  text-align: center;
+}
