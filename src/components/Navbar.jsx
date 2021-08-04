@@ -7,7 +7,7 @@ const Navbar = () => (
       <Link to="/" className="logo">CATALOGUE OF RECIPES</Link>
       <ul className="d-flex nav-links">
         <li>
-          <Link to="/order">ORDERS</Link>
+          <Link to="/order">ORDER</Link>
         </li>
         <li>
           <Link to="/tutorial">TUTORIALS</Link>
