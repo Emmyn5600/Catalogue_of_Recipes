@@ -1,7 +1,7 @@
 import React from 'react';
 
 const Tutorial = () => (
-    <div className="home">
+  <div className="home">
     <h2>
       Welcome to our Tutorial Page
     </h2>
@@ -15,7 +15,7 @@ const Tutorial = () => (
       fugiat nulla pariatur. Excepteur sint occaecat cupidatat non proident,
       sunt in culpa qui o!cia deserunt mollit anim id est laborum. Ipsu
     </p>
-    </div>
-)
+  </div>
+);
 
 export default Tutorial;
