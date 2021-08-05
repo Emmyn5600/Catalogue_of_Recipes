@@ -1,18 +1,20 @@
 import React from 'react';
 import ReactDOM from 'react-dom';
-import './index.css';
-import Route from './components/Route';
-import rootReducer from './reducers';
+import thunk from 'redux-thunk';
 import { Provider } from 'react-redux';
 import { createStore, applyMiddleware } from 'redux';
-import  thunk  from 'redux-thunk';
+import Route from './components/Route';
+import { loadRecipes } from './actions';
+import './index.css';
+import rootReducer from './reducers';
 
-const store = createStore(rootReducer. applyMiddleware(thunk));
+const store = createStore(rootReducer, applyMiddleware(thunk));
+store.dispatch(loadRecipes);
 
 ReactDOM.render(
   <React.StrictMode>
     <Provider store={store}>
-     <Route />
+      <Route />
     </Provider>
   </React.StrictMode>,
   document.getElementById('root'),
