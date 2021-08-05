@@ -185,9 +185,14 @@ code {
 }
 
 .recipe-item-container .image-wrapper img {
-  width: 100%;
+  width: 90%;
   height: auto;
   object-fit: cover;
+}
+
+.recipe-details {
+  color: var(--white);
+  font-weight: 800;
 }
 
 .recipe-details .name {
