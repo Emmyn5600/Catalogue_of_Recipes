@@ -168,3 +168,50 @@ code {
 .recipe-display {
   padding: 100px;
 }
+
+.recipes-list-main-container {
+  padding-top: 2.5rem;
+}
+
+.recipes-wrapper {
+  display: grid;
+  grid-template-columns: repeat(3, 1fr);
+  grid-gap: 2rem;
+}
+
+.recipe-item-container .image-wrapper {
+  border-radius: 1rem;
+  overflow: hidden;
+}
+
+.recipe-item-container .image-wrapper img {
+  width: 100%;
+  height: auto;
+  object-fit: cover;
+}
+
+.recipe-details .name {
+  color: var(--dark);
+  height: 0;
+  font-weight: 500;
+}
+
+.category-area-container .category {
+  background-color: var(--primary);
+  color: var(--dark);
+  padding: 0.2rem 0.6rem;
+  border-radius: 0.2rem;
+}
+
+.category-area-container .category span {
+  font-weight: var(--light-weight);
+}
+
+.category-area-container .from {
+  color: var(--dark-light-color);
+  font-weight: var(--light-weight);
+}
+
+.category-area-container .from span {
+  font-weight: 500;
+}
