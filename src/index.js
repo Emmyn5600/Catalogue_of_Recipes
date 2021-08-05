@@ -3,6 +3,8 @@ import ReactDOM from 'react-dom';
 import './index.css';
 import Route from './components/Route';
 
+const store = createStore(reducer)
+
 ReactDOM.render(
   <React.StrictMode>
     <Route />
