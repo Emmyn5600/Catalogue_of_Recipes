@@ -17,9 +17,9 @@ class RecipesList extends React.Component {
   render() {
     const { recipes } = this.props;
     return (
-      <ul>
+      <ul className="recipe-display">
         {recipes.map((recipe) => (
-          <li key={recipe.idMeal}>Pizza</li>
+          <li key={recipe.idMeal}>{recipe.idMeal}</li>
         ))}
       </ul>
     );

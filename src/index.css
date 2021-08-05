@@ -164,3 +164,7 @@ code {
   font-weight: 600;
   font-family: 'Courier New', monospace;
 }
+
+.recipe-display {
+  padding: 100px;
+}
