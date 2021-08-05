@@ -13,7 +13,29 @@ const RecipeDetails = (props) => {
     if (!recipe) return history.replace('/');
     return setSelectedRecipe(recipe);
   }, []);
-  return (<h1>{selectedRecipe.strMeal}</h1>);
+
+  const myIngredients = [];
+  Object.keys(selectedRecipe).map((key, index) => (key.startsWith('strIngredient') && selectedRecipe[key] !== ''
+    ? myIngredients.push({ name: selectedRecipe[key], id: index })
+    : ''));
+  return (
+    <div>
+      <div className="image-wrapper-1">
+        <img src={selectedRecipe.strMealThumb} alt="recipe" />
+        <div className="recipe-details">
+          <h3 className="name">{selectedRecipe.strInstructions}</h3>
+        </div>
+        <div className="category-list">
+          <h1>Ingredient</h1>
+          <ul className="category-details">
+            {myIngredients.map((ingredient) => (
+              <li key={ingredient.id}>{ingredient.name}</li>
+            ))}
+          </ul>
+        </div>
+      </div>
+    </div>
+  );
 };
 
 RecipeDetails.defaultProps = {

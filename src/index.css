@@ -179,6 +179,16 @@ code {
   grid-gap: 2rem;
 }
 
+.image-wrapper-1 {
+  display: flex;
+}
+
+.image-wrapper-1 img {
+  width: 550px;
+  height: auto;
+  object-fit: cover;
+}
+
 .recipe-item-container .image-wrapper {
   border-radius: 1rem;
   overflow: hidden;
@@ -198,7 +208,7 @@ code {
 .recipe-details .name {
   color: var(--dark);
   height: 0;
-  font-weight: 500;
+  padding: 65px;
 }
 
 .category-area-container .category {
@@ -219,4 +229,8 @@ code {
 
 .category-area-container .from span {
   font-weight: 500;
+}
+
+.category-list {
+  color: var(--white);
 }
