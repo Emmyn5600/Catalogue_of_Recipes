@@ -9,7 +9,10 @@ import './index.css';
 import rootReducer from './reducers';
 
 const store = createStore(rootReducer, applyMiddleware(thunk));
-store.dispatch(loadRecipes());
+// store.dispatch(loadRecipes());
+// setTimeout(() => {
+//   console.log(store.getState());
+// }, 5000);
 
 ReactDOM.render(
   <React.StrictMode>

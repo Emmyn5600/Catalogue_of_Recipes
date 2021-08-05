@@ -10,6 +10,6 @@ export const loadRecipes = () => async (dispatch) => {
     const data = await res.json();
     dispatch({ type: LOAD_RECIPES_SUCCESS, payload: data.meals });
   } catch (error) {
-    dispatch({ type: LOAD_RECIPES_ERROR, payload: error.message});
+    dispatch({ type: LOAD_RECIPES_ERROR, payload: error.message });
   }
 };
