@@ -3,7 +3,7 @@ import {
     LOAD_CATEGORIES_START,
     LOAD_CATEGORIES_SUCCESS,
   } from '../actions/index';
-  import createStore from '../index';
+  import createStore from '../store/createStore';
   
   const store = createStore();
   
