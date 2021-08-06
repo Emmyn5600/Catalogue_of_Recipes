@@ -19,10 +19,11 @@ const RecipeDetails = (props) => {
     ? myIngredients.push({ name: selectedRecipe[key], id: index })
     : ''));
   return (
-    <div>
+    <div className="info-category">
       <div className="image-wrapper-1">
         <img src={selectedRecipe.strMealThumb} alt="recipe" />
         <div className="recipe-details">
+          <h1>Instructions</h1>
           <h3 className="name">{selectedRecipe.strInstructions}</h3>
         </div>
         <div className="category-list">

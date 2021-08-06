@@ -202,7 +202,7 @@ code {
 
 .recipe-details {
   color: var(--white);
-  font-weight: 800;
+  font-weight: 500;
 }
 
 .recipe-details .name {
@@ -247,4 +247,9 @@ code {
   background-color: var(--white);
   width: 30%;
   border-radius: 0.2rem;
+}
+
+.info-category {
+  background-color: rgb(41, 35, 35);
+  padding: 60px;
 }
