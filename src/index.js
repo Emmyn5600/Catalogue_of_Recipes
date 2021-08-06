@@ -1,18 +1,11 @@
 import React from 'react';
 import ReactDOM from 'react-dom';
-import thunk from 'redux-thunk';
 import { Provider } from 'react-redux';
-import { createStore, applyMiddleware } from 'redux';
 import Route from './components/Route';
-// import { loadRecipes } from './actions';
 import './index.css';
-import rootReducer from './reducers';
+import createStore from './store/createStore';
 
-const store = createStore(rootReducer, applyMiddleware(thunk));
-// store.dispatch(loadRecipes());
-// setTimeout(() => {
-//   console.log(store.getState());
-// }, 5000);
+const store = createStore();
 
 ReactDOM.render(
   <React.StrictMode>
