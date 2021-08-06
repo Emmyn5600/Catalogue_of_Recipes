@@ -143,10 +143,6 @@ code {
   min-height: 100vh;
 }
 
-.book-wrapper {
-  padding-top: 3rem;
-}
-
 .tutorial-section {
   padding: 250px;
   color: var(--white);
@@ -169,24 +165,23 @@ code {
   padding: 100px;
 }
 
-.recipes-list-main-container {
-  padding-top: 2.5rem;
-}
-
 .recipes-wrapper {
   display: grid;
   grid-template-columns: repeat(3, 1fr);
   grid-gap: 2rem;
 }
 
-.image-wrapper-1 {
-  display: flex;
-}
-
 .image-wrapper-1 img {
   width: 550px;
   height: auto;
   object-fit: cover;
+}
+
+.card img {
+  width: 100%;
+  height: 8rem;
+  border-radius: 5rem;
+  padding: 1rem;
 }
 
 .recipe-item-container .image-wrapper {
@@ -203,12 +198,6 @@ code {
 .recipe-details {
   color: var(--white);
   font-weight: 500;
-}
-
-.recipe-details .name {
-  color: var(--dark);
-  height: 0;
-  padding: 65px;
 }
 
 .category-area-container .category {
@@ -252,4 +241,12 @@ code {
 .info-category {
   background-color: rgb(41, 35, 35);
   padding: 60px;
+}
+
+.card {
+  background-color: red;
+  max-width: 300px;
+  box-shadow: 0 8px 20px 0 rgb(0, 0, 0, 0.15);
+  border-radius: 10px;
+  overflow: hidden;
 }
