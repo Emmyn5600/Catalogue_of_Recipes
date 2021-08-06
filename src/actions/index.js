@@ -8,6 +8,7 @@ export const LOAD_RECIPES_ERROR = 'LOAD_RECIPES_ERROR';
 export const LOAD_CATEGORIES_SUCCESS = 'LOAD_CATEGORIES_SUCCESS';
 export const LOAD_CATEGORIES_FAILURE = 'LOAD_CATEGORIES_FAILURE';
 export const LOAD_CATEGORIES_START = 'LOAD_CATEGORIES_START';
+export const CHANGE_FILTER = 'CHANGE_FILTER';
 
 const loadCategoriesSuccess = (categories) => ({
   type: LOAD_CATEGORIES_SUCCESS,
@@ -43,3 +44,8 @@ export const loadCategoriesAsync = () => async (dispatch) => {
   }
   axios.get(endPoint);
 };
+
+export const changeFilter = (filter) => ({
+  type: CHANGE_FILTER,
+  payload: filter,
+});
