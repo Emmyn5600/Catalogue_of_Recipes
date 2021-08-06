@@ -4,7 +4,7 @@ import PropTypes from 'prop-types';
 const CategoryFilter = (props) => {
   const { categories, currentFilter, onChangeFilter } = props;
   return (
-    <div className="filter-book d-flex flex-center">
+    <div className="filter-recipes d-flex flex-center">
       <select
         name="filter"
         id="filter"

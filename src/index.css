@@ -234,3 +234,17 @@ code {
 .category-list {
   color: var(--white);
 }
+
+.filter-recipes {
+  margin-top: 3rem;
+  width: 100%;
+  justify-content: flex-start;
+}
+
+.filter-recipes > select {
+  border: var(--border);
+  padding: 0.8rem;
+  background-color: var(--white);
+  width: 30%;
+  border-radius: 0.2rem;
+}
