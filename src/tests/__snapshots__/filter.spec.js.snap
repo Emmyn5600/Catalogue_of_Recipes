@@ -1,0 +1,20 @@
+// Jest Snapshot v1, https://goo.gl/fbAQLP
+
+exports[`Filter should render correctly 1`] = `
+<div
+  className="filter-recipes d-flex flex-center"
+>
+  <select
+    id="filter"
+    name="filter"
+    onChange={[Function]}
+    required={true}
+  >
+    <option
+      value="All"
+    >
+      All
+    </option>
+  </select>
+</div>
+`;
