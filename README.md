@@ -1,4 +1,24 @@
-# Getting Started with Create React App
+![](https://img.shields.io/badge/Microverse-blueviolet)
+
+# Catalogue of Recipes
+
+> Catalogue of Recipes is a React based app that provides a set of instructions used for preparing and producing a certain food, dish, or drink. The purpose of a recipe is to have a precise record of the ingredients used, the amounts needed, and the way they are combined.
+
+## Built With
+
+- React
+- Redux
+- CSS
+
+# Live demo
+
+Visit [this link]()
+
+# Getting Started
+
+**To get the local copy of the project up and running you will need to run the following commands on your terminal:**
+
+`git clone https://github.com/Emmyn5600/Catalogue_of_Recipes.git`
 
 This project was bootstrapped with [Create React App](https://github.com/facebook/create-react-app).
 
@@ -68,3 +88,30 @@ This section has moved here: [https://facebook.github.io/create-react-app/docs/d
 ### `npm build` fails to minify
 
 This section has moved here: [https://facebook.github.io/create-react-app/docs/troubleshooting#npm-run-build-fails-to-minify](https://facebook.github.io/create-react-app/docs/troubleshooting#npm-run-build-fails-to-minify)
+
+👤 **NSABIMANA Emmanuel**
+
+- GitHub: [@emmyn5600](https://github.com/Emmyn5600)
+- Twitter: [@NSABIMA62253884](https://twitter.com/NSABIMA62253884)
+- LinkedIn: [@nsabimana-emmanuel-4276091b2](https://www.linkedin.com/in/nsabimana-emmanuel-4276091b2/)
+
+## 🤝 Contributing
+
+Contributions, issues, and feature requests are welcome!
+
+Feel free to check the [issues page](https://github.com/Emmyn5600/Catalogue_of_Recipes/issues).
+
+## Show your support
+
+Give a ⭐️ if you like this project!❤️
+
+## Acknowledgments
+
+- Microverse
+- [Cuberto](https://dribbble.com/cuberto) for the design inspiration
+
+## License
+
+The MIT License (MIT)
+
+Copyright (c) 2021 [BNSABIMANA Emmanuel](emmanuelnsabimana.netlify.app/)
