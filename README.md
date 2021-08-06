@@ -114,4 +114,4 @@ Give a ⭐️ if you like this project!❤️
 
 The MIT License (MIT)
 
-Copyright (c) 2021 [BNSABIMANA Emmanuel](emmanuelnsabimana.netlify.app/)
+Copyright (c) 2021 [NSABIMANA Emmanuel](emmanuelnsabimana.netlify.app/)
