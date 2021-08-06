@@ -1,7 +1,9 @@
 // Jest Snapshot v1, https://goo.gl/fbAQLP
 
 exports[`Recipe Details should render correctly 1`] = `
-<div>
+<div
+  className="info-category"
+>
   <div
     className="image-wrapper-1"
   >
@@ -11,6 +13,9 @@ exports[`Recipe Details should render correctly 1`] = `
     <div
       className="recipe-details"
     >
+      <h1>
+        Instructions
+      </h1>
       <h3
         className="name"
       />
