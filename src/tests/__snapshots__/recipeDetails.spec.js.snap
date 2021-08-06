@@ -1,0 +1,30 @@
+// Jest Snapshot v1, https://goo.gl/fbAQLP
+
+exports[`Recipe Details should render correctly 1`] = `
+<div>
+  <div
+    className="image-wrapper-1"
+  >
+    <img
+      alt="recipe"
+    />
+    <div
+      className="recipe-details"
+    >
+      <h3
+        className="name"
+      />
+    </div>
+    <div
+      className="category-list"
+    >
+      <h1>
+        Ingredient
+      </h1>
+      <ul
+        className="category-details"
+      />
+    </div>
+  </div>
+</div>
+`;
