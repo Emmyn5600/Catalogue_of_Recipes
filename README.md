@@ -4,6 +4,11 @@
 
 > Catalogue of Recipes is a React based app that provides a set of instructions used for preparing and producing a certain food, dish, or drink. The purpose of a recipe is to have a precise record of the ingredients used, the amounts needed, and the way they are combined.
 
+## How it looks
+
+![screenshot](./img1.png)
+![screenshot](./img2.png)
+
 ## Built With
 
 - React

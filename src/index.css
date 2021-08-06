@@ -229,9 +229,9 @@ code {
 .filter-recipes > select {
   border: var(--border);
   padding: 0.8rem;
-  background-color: var(--white);
-  width: 30%;
+  width: 100%;
   border-radius: 0.2rem;
+  background-color: var(--warm-grey);
 }
 
 .info-category {
