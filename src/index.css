@@ -1,13 +1,253 @@
+:root {
+  --border: 1px solid #e8e8e8;
+  --primary-color: #0290ff;
+  --black-two: #121212;
+  --bg-color: #f5f6fa;
+  --white: #fff;
+  --light: rgba(0, 0, 0, 0.377);
+  --loader-width: 65px;
+  --loader-height: 65px;
+  --loader-color-primary: #0290ff;
+  --loader-color-secondary: #eee;
+  --line-width: 5px;
+  --animation-duration: 2s;
+  --loader-initial-scale: 0.1;
+  --warm-grey: #888;
+  --font-weight: 300;
+}
+
 body {
   margin: 0;
-  font-family: -apple-system, BlinkMacSystemFont, 'Segoe UI', 'Roboto', 'Oxygen',
-    'Ubuntu', 'Cantarell', 'Fira Sans', 'Droid Sans', 'Helvetica Neue',
+  font-family:
+    -apple-system,
+    BlinkMacSystemFont,
+    'Segoe UI',
+    'Roboto',
+    'Oxygen',
+    'Ubuntu',
+    'Cantarell',
+    'Fira Sans',
+    'Droid Sans',
+    'Helvetica Neue',
     sans-serif;
   -webkit-font-smoothing: antialiased;
   -moz-osx-font-smoothing: grayscale;
 }
 
+a {
+  text-decoration: none;
+}
+
+li {
+  list-style: none;
+}
+
+ul {
+  padding: 0;
+}
+
+.d-flex {
+  display: flex;
+}
+
+.flex-unit {
+  flex: 1;
+}
+
+.flex-column {
+  flex-direction: column;
+}
+
 code {
-  font-family: source-code-pro, Menlo, Monaco, Consolas, 'Courier New',
+  font-family:
+    source-code-pro,
+    Menlo,
+    Monaco,
+    Consolas,
+    'Courier New',
     monospace;
+}
+
+.flex-center {
+  justify-content: center;
+  align-items: center;
+}
+
+.mainNav {
+  width: 100%;
+  height: 2rem;
+  padding: 1rem 0;
+  background-color: rgb(243, 219, 83);
+  border-bottom: var(--border);
+  justify-content: space-between;
+  position: fixed;
+  left: 0;
+  right: 0;
+  z-index: 9999;
+}
+
+.links-container {
+  margin-left: 5rem;
+}
+
+.user-icon {
+  margin-right: 5rem;
+}
+
+.nav-links {
+  margin-left: 2rem;
+}
+
+.chapter-details h3 {
+  font-size: 0.875rem;
+  opacity: 0.5;
+  font-weight: var(--font-weight);
+}
+
+.chapter-details .chapter-name {
+  font-size: 0.9rem;
+  margin-bottom: 0.2rem;
+}
+
+.chapter-details a {
+  background-color: var(--primary-color);
+  border-radius: 0.2rem;
+  padding: 0.5rem 1.5rem;
+  font-size: 0.7rem;
+  color: var(--white);
+  margin-top: 0.8rem;
+}
+
+.nav-links li a {
+  font-size: 0.813rem;
+  color: var(--black-two);
+  padding: 0 1rem;
+}
+
+.logo {
+  font-size: 1rem;
+  color: var(--primary-color);
+}
+
+.user-color {
+  color: var(--primary-color);
+  font-size: 1.2rem;
+}
+
+.app {
+  background-color: var(--bg-color);
+  min-height: 100vh;
+}
+
+.tutorial-section {
+  padding: 250px;
+  font-weight: 600;
+  font-family: 'Courier New', monospace;
+}
+
+.tutorial-header {
+  text-align: center;
+}
+
+.order-section {
+  padding: 250px;
+  font-weight: 600;
+  font-family: 'Courier New', monospace;
+}
+
+.recipe-display {
+  padding: 100px;
+}
+
+.recipes-wrapper {
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(15rem, 1fr));
+  grid-gap: 4rem 50px;
+}
+
+.image-wrapper-1 img {
+  text-align: center;
+  width: 400px;
+}
+
+.card img {
+  width: 100%;
+  height: 8rem;
+  border-radius: 5rem;
+  padding: 1rem;
+}
+
+.recipe-item-container .image-wrapper {
+  border-radius: 1rem;
+  overflow: hidden;
+}
+
+.recipe-item-container .image-wrapper img {
+  width: 90%;
+  height: auto;
+  object-fit: cover;
+}
+
+.recipe-details h3 {
+  color: var(--bg-color);
+}
+
+.recipe-details .name {
+  color: var(--black-two);
+}
+
+.category-area-container .category {
+  background-color: var(--primary);
+  color: var(--dark);
+  padding: 0.2rem 0.6rem;
+  border-radius: 0.2rem;
+}
+
+.category-area-container .category span {
+  font-weight: var(--light-weight);
+}
+
+.category-area-container .from {
+  color: var(--dark-light-color);
+  font-weight: var(--light-weight);
+}
+
+.category-area-container .from span {
+  font-weight: 500;
+}
+
+.category-list {
+  color: var(--white);
+}
+
+.filter-recipes {
+  margin-top: 3rem;
+  width: 100%;
+  justify-content: flex-start;
+}
+
+.filter-recipes > select {
+  border: var(--border);
+  padding: 0.8rem;
+  width: 100%;
+  border-radius: 0.2rem;
+  background-color: var(--warm-grey);
+}
+
+.info-category {
+  background-color: rgb(97, 94, 94);
+  padding: 60px;
+  border-radius: 12px;
+  box-shadow: 0 1px 8px rgba(0, 0, 0, 0.25);
+  margin: 2rem auto;
+  width: 80rem;
+  max-width: 95%;
+}
+
+.card {
+  max-width: 300px;
+  box-shadow: 0 8px 20px 0 rgb(0, 0, 0, 0.15);
+  border-radius: 10px;
+  overflow: hidden;
+  justify-content: flex-end;
 }
